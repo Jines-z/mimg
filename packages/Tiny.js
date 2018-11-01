@@ -26,7 +26,6 @@ const validate = () => {
                 reject()
                 throw err
                 process.exit(0)
-                return
             }
             resolve()
         })
