@@ -1,5 +1,6 @@
 const tinify      = require('tinify')
 const chalk       = require('chalk')
+const path        = require('path')
 const Banner      = require('../lib/Banner')
 const Spinner     = require('../lib/Spinner')
 const Div         = require('../lib/Div')
@@ -64,16 +65,16 @@ const compress = async fileStr => {
     for (let i = 0; i < files.length; i++) {
         Spinner.text = files[i] + ' \n'
         const size =  await fileSize(files[i])
-        const defaultSize = size.toFixed(2)
+        const defaultSize = size
         let resultObj = {
-            name: files[i],
+            name: path.basename(files[i]),
             defaultSize
         }
         const sourceData = await fileSource(files[i])
         const resultSize = await compressBF(sourceData, files[i])
         result.push({
             ...resultObj,
-            resultSize: resultSize.toFixed(2),
+            resultSize: resultSize,
             result: '-' + toPercent(resultSize, defaultSize)
         })
         if (i == files.length -1) {

@@ -1,6 +1,6 @@
 {
   "name": "mimg",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "This is a tool for compressing images",
   "main": "index.js",
   "author": "zhengaojin <zhengaojin@live.cn>",
@@ -23,6 +23,7 @@
     "figlet": "^1.2.1",
     "ora": "^3.0.0",
     "progress": "^2.0.1",
-    "tinify": "^1.6.0-beta.2"
+    "tinify": "^1.6.0-beta.2",
+    "walk": "^2.3.14"
   }
 }

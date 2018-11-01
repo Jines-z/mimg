@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
-const program = require('commander')
-const { setKey } = require('../packages/Key')
+const program      = require('commander')
+const { setKey }   = require('../packages/Key')
 const { compress } = require('../packages/Tiny')
+const { version }  = require('../package')
 
 program
-    .version('1.0.0', '-v, --version')
+    .version(version, '-v, --version')
     .command('set <key>')
     .description('Set your key')
     .action(function (dir, cmd) {
