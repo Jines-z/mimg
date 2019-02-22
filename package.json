@@ -1,6 +1,6 @@
 {
   "name": "mimg",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "This is a tool for compressing images",
   "main": "index.js",
   "author": "zhengaojin <zhengaojin@live.cn>",
