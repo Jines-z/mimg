@@ -1,13 +1,13 @@
-const tinify      = require('tinify')
-const chalk       = require('chalk')
-const path        = require('path')
-const Banner      = require('../lib/Banner')
-const Spinner     = require('../lib/Spinner')
-const Div         = require('../lib/Div')
-const { Key }     = require('./Key')
-const { writeFile } = require("fs")
+const cwd           = process.cwd()
+const tinify        = require('tinify')
+const chalk         = require('chalk')
+const path          = require('path')
+const Banner        = require('../lib/Banner')
+const Spinner       = require('../lib/Spinner')
+const Div           = require('../lib/Div')
+const { Key }       = require('./Key')
+const { writeFile } = require('fs')
 const { readDir, fileSize, fileSource, toPercent } = require('../lib/Utils')
-const cwd = process.cwd()
 
 const setKey = () => {
     tinify.key = Key

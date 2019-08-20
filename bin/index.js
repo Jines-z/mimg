@@ -3,6 +3,7 @@
 const program      = require('commander')
 const { setKey }   = require('../packages/Key')
 const { compress } = require('../packages/Tiny')
+const { Base64 }   = require('../packages/Base64')
 const { version }  = require('../package')
 
 program
@@ -15,7 +16,8 @@ program
 
 program
     .option('-a, --all', 'Compress all images in the folder', compress)
-    .option('-f, --files [file,file]', 'Single image compression, also bulk compression', compress)
+    .option('-f, --files  [file,file]', 'Single image compression, also bulk compression', compress)
+    .option('-b, --base64 [file]', 'convert your images to base64', Base64)
 
 program.parse(process.argv)
 
