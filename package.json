@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
-    "clipboardy": "^2.3.0",
+    "clipboardy": "^3.0.0",
     "cliui": "^4.1.0",
     "clui": "^0.3.6",
     "commander": "^2.19.0",
